@@ -1,0 +1,76 @@
+<!-- 
+    Create a customer satisfaction form for a resturant to rate their experience.
+
+    Information needed from the customer are:
+    1. name of the customer (type=text)
+    2. email address of the customer (type=email)
+    3. options -> bad, good, excellent (type=radio)
+    4. submit button to submit rating. (type=submit)
+
+    You can style like as you like.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costomer satisfaction form</title>
+</head>
+<style>
+    * {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+    }
+
+    .form_container {
+        border: 2px solid blue;
+        padding: 5% 2.5%;
+    }
+
+    .form_control {
+        margin: 10px;
+    }
+
+    input[type="submit"]{
+        padding: 5px 10px;
+    }
+</style>
+<body>
+    <div class="form_container">
+        <h1>Costomer Satisfaction Form</h1>
+    <form action="#">
+        <div class="form_control">
+        <label for="costomer_name">Enter your name.</label>
+        <input type="text" name="costomer_name" id="costomer_name" placeholder="Colin Joy">
+    </div>
+    <div class="form_control">
+        <label for="costomer_email">Enter you email address</label>
+        <input type="email" name="costomer_email" id="costomer_email" placeholder="colin.joy2006@blah.com">
+    </div>
+    <div class="form_control">
+        <h3>Enter rating</h3>  
+        <input type="radio" name="costomer_rating" id="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" name="costomer_rating" id="good">
+        <label for="good">Good</label>
+        <input type="radio" name="costomer_rating" id="excellent">
+        <label for="excellent">Excellent</label>
+    </div>
+
+    <div class="form_control">
+        <input type="submit">
+    </div>
+
+    </div>
+    </form>
+</div>
+</body>
+</html>

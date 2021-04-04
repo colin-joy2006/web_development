@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+
+        .form_container {
+            border: 1px solid black;
+            padding: 5% 2.5%;
+        }
+
+        .form_container h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .form_control {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 5px 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background-color: blue;
+            color: white;
+            border:5px solid rgb(219, 168, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form_container">
+        <h1>Register With US!</h1>
+        <form action="#">
+            <div class="form_control">
+                <label for="customer_name">Enter your name</label>
+                <input type="text" name="customer_name" id="customer_name" placeholder="John Doe">
+            </div>
+
+            <div class="form_control">
+                <label for="customer_email">Enter your email address</label>
+                <input type="email" name="customer_email" id="customer_email" placeholder="john.doe123@xyz.com">
+            </div>
+
+            <div class="form_control">
+                <h2>Please select your age group</h2>
+                <div class="age_groups">
+                    <input type="radio" name="age_range" id="15_to_17" value="15_to_17">
+                    <label for="15_to_17">15 to 17</label>
+                </div>
+                <div class="age_groups">
+                    <input type="radio" name="age_range" id="18_to_25" value="18_to_25">
+                    <label for="18_to_25">18 to 25</label>
+                </div>
+                <div class="age_groups">
+                    <input type="radio" name="age_range" id="26_plus" value="26_plus">
+                    <label for="26_plus">26+</label>
+                </div>
+            </div>
+
+            <div class="form_control">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

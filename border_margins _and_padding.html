@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border, Padding and Margins</title>
+</head>
+
+<style>
+    * {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .toothless {
+        border-width: 2px;
+        border-color: red;
+        border-style: solid;
+
+        padding: 2.5%;
+        margin: 2.5%;
+
+        border-radius: 30px;
+    }
+
+    .brightfury {
+        border: 2px solid lightskyblue;
+
+        padding: 10% 15%; 
+        margin: 10% 15%; 
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 20px;
+
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 10px;
+
+        /* box-shadow: 0 10px 10px rgba(0,0,0,0.5); */
+    }
+
+    .stormfly {
+        border: 2px solid orangered;
+
+        padding-top: 5%;
+        padding-left: 10%;
+        padding-right: 15%;
+        padding-bottom: 20%;
+        
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 15%;
+        margin-bottom: 20%;
+    }
+</style>
+
+<body>
+    <div class="toothless">
+        <h1>ToothLess</h1>
+        <p>toothless is a nightfury dragon who does not have teeth.</p>
+    </div>
+    <div class="brightfury">
+        <h1>brightfury</h1>
+        <p>brightfury is a brightfury dragon who may have teeth.</p>
+    </div>
+    <div class="stormfly">
+        <h1>Stormfly</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil error molestias molestiae ex eaque libero id laudantium sit at quae atque possimus tempora enim est, rerum recusandae, corrupti voluptates accusamus?</p>
+    </div>
+</body>
+</html>
